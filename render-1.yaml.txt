@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: verox-osint-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false          # You will enter this manually in Render dashboard
+      - key: ADMIN_IDS
+        sync: false          # e.g. 8709399313  (comma-separated for multiple)
+      - key: BOT_LINK
+        value: https://t.me/verox_info_bot
+      - key: PORT
+        value: "8080"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
