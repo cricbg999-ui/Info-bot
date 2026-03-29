@@ -29,7 +29,7 @@ from telegram.error import TelegramError
 # Set these in Render Dashboard → Your Service → Environment tab.
 # Never hardcode tokens in your code!
 
-BOT_TOKEN   = os.environ["BOT_TOKEN"]           # Required — no default
+BOT_TOKEN   = os.environ["8583222284:AAHHFwe2dm1ogYZjvW09eL67TxJdQs6_c8M"]           # Required — no default
 ADMIN_IDS   = [int(x.strip()) for x in os.environ.get("ADMIN_IDS", "8709399313").split(",")]
 BOT_LINK    = os.environ.get("BOT_LINK", "https://t.me/verox_info_bot")
 PORT        = int(os.environ.get("PORT", 8080)) # Render injects PORT automatically
